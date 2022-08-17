@@ -9,7 +9,7 @@
 
 namespace Edujugon\Laradoo;
 
-use Edujugon\Laradoo\Exceptions\OdooException;
+use laabidi1990\laradoo\Exceptions\OdooException;
 use Illuminate\Support\Collection;
 use ripcord;
 

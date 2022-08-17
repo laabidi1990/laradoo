@@ -1,8 +1,8 @@
 <?php
 
-namespace Edujugon\Laradoo\Providers;
+namespace laabidi1990\laradoo\Providers;
 
-use Edujugon\Laradoo\Odoo;
+use laabidi1990\laradoo\Odoo;
 use Illuminate\Support\ServiceProvider;
 
 class OdooServiceProvider extends ServiceProvider

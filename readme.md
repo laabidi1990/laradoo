@@ -28,7 +28,7 @@ Register Laradoo service by adding it to the providers array.
 ```php
 'providers' => array(
         ...
-        Edujugon\Laradoo\Providers\OdooServiceProvider::class
+        laabidi1990\laradoo\Providers\OdooServiceProvider::class
     )
 ```
 
@@ -36,14 +36,14 @@ Let's add the Alias facade, add it to the aliases array.
 ```php
 'aliases' => array(
         ...
-        'Odoo' => Edujugon\Laradoo\Facades\Odoo::class,
+        'Odoo' => laabidi1990\laradoo\Facades\Odoo::class,
     )
 ```
     
 Publish the package's configuration file to the application's own config directory
 
 ```php
-php artisan vendor:publish --provider="Edujugon\Laradoo\Providers\OdooServiceProvider" --tag="config"
+php artisan vendor:publish --provider="laabidi1990\laradoo\Providers\OdooServiceProvider" --tag="config"
 ```
 
 ### Configuration
@@ -61,7 +61,7 @@ Also, you can dynamically update those values calling the available setter metho
 Instance the main Odoo class:
 
 ```php
-$odoo = new \Edujugon\Laradoo\Odoo();
+$odoo = new \laabidi1990\laradoo\Odoo();
 ```
 You can get the Odoo API version just calling the version method:
 
